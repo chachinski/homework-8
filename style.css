@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+main > .imagePart {
+  width: 50%;
+}
+
+.imagePart > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+main > .formPart {
+  min-width: 52%;
+  padding: 0 72px;
+  background-color: #fff;
+  border-radius: 22px 0 0 22px;
+  margin: 0 0 0 -20px;
+  display: grid;
+  place-content: start center;
+  z-index: 1;
+}
+
+.formPart > form {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputsContainer {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inputWrapper > label {
+  font-weight: 600;
+  font-size: 20px;
+  color: #003d61;
+}
+.inputWrapper > input {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 44px 16px;
+  border: 0px;
+  border-left: 2px solid #003d61;
+  border-bottom: 2px solid #003d61;
+}
+
+.formFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.formFooter div:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.formFooter p {
+  font-weight: 600;
+  color: #003d61;
+}
+.formFooter a {
+  color: #ed2980;
+}
+
+.socialIcopns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
